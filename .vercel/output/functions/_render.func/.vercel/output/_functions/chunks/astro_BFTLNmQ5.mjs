@@ -194,30 +194,11 @@ const InvalidImageService = {
   title: "Error while loading image service.",
   message: "There was an error loading the configured image service. Please see the stack trace for more information."
 };
-const MissingImageDimension = {
-  name: "MissingImageDimension",
-  title: "Missing image dimensions",
-  message: (missingDimension, imageURL) => `Missing ${missingDimension === "both" ? "width and height attributes" : `${missingDimension} attribute`} for ${imageURL}. When using remote images, both dimensions are required unless in order to avoid CLS.`,
-  hint: "If your image is inside your `src` folder, you probably meant to import it instead. See [the Imports guide for more information](https://docs.astro.build/en/guides/imports/#other-assets). You can also use `inferSize={true}` for remote images to get the original dimensions."
-};
 const FailedToFetchRemoteImageDimensions = {
   name: "FailedToFetchRemoteImageDimensions",
   title: "Failed to retrieve remote image dimensions",
   message: (imageURL) => `Failed to get the dimensions for ${imageURL}.`,
   hint: "Verify your remote image URL is accurate, and that you are not using `inferSize` with a file located in your `public/` folder."
-};
-const UnsupportedImageFormat = {
-  name: "UnsupportedImageFormat",
-  title: "Unsupported image format",
-  message: (format, imagePath, supportedFormats) => `Received unsupported format \`${format}\` from \`${imagePath}\`. Currently only ${supportedFormats.join(
-    ", "
-  )} are supported by our image services.`,
-  hint: "Using an `img` tag directly instead of the `Image` component might be what you're looking for."
-};
-const UnsupportedImageConversion = {
-  name: "UnsupportedImageConversion",
-  title: "Unsupported image conversion",
-  message: "Converting between vector (such as SVGs) and raster (such as PNGs and JPEGs) images is not currently supported."
 };
 const PrerenderDynamicEndpointPathCollide = {
   name: "PrerenderDynamicEndpointPathCollide",
@@ -237,12 +218,6 @@ const ExpectedImageOptions = {
   name: "ExpectedImageOptions",
   title: "Expected image options.",
   message: (options) => `Expected getImage() parameter to be an object. Received \`${options}\`.`
-};
-const IncompatibleDescriptorOptions = {
-  name: "IncompatibleDescriptorOptions",
-  title: "Cannot set both `densities` and `widths`",
-  message: "Only one of `densities` or `widths` can be specified. In most cases, you'll probably want to use only `widths` if you require specific widths.",
-  hint: "Those attributes are used to construct a `srcset` attribute, which cannot have both `x` and `w` descriptors."
 };
 const ResponseSentError = {
   name: "ResponseSentError",
@@ -276,12 +251,6 @@ const AstroResponseHeadersReassigned = {
   message: "Individual headers can be added to and removed from `Astro.response.headers`, but it must not be replaced with another instance of `Headers` altogether.",
   hint: "Consider using `Astro.response.headers.add()`, and `Astro.response.headers.delete()`."
 };
-const LocalImageUsedWrongly = {
-  name: "LocalImageUsedWrongly",
-  title: "Local images must be imported.",
-  message: (imageFilePath) => `\`Image\`'s and \`getImage\`'s \`src\` parameter must be an imported image or an URL, it cannot be a string filepath. Received \`${imageFilePath}\`.`,
-  hint: "If you want to use an image from your `src` folder, you need to either import it or if the image is coming from a content collection, use the [image() schema helper](https://docs.astro.build/en/guides/images/#images-in-content-collections). See https://docs.astro.build/en/guides/images/#src-required for more information on the `src` property."
-};
 const AstroGlobUsedOutside = {
   name: "AstroGlobUsedOutside",
   title: "Astro.glob() used outside of an Astro file.",
@@ -293,12 +262,6 @@ const AstroGlobNoMatch = {
   title: "Astro.glob() did not match any files.",
   message: (globStr) => `\`Astro.glob(${globStr})\` did not return any matching files.`,
   hint: "Check the pattern for typos."
-};
-const MissingSharp = {
-  name: "MissingSharp",
-  title: "Could not find Sharp.",
-  message: "Could not find Sharp. Please install Sharp (`sharp`) manually into your project or migrate to another image service.",
-  hint: "See Sharp's installation instructions for more information: https://sharp.pixelplumbing.com/install. If you are not relying on `astro:assets` to optimize, transform, or process any images, you can configure a passthrough image service instead of installing Sharp. See https://docs.astro.build/en/reference/errors/missing-sharp for more information.\n\nSee https://docs.astro.build/en/guides/images/#default-image-service for more information on how to migrate to another image service."
 };
 const UnknownContentCollectionError = {
   name: "UnknownContentCollectionError",
@@ -2246,4 +2209,4 @@ function createVNode(type, props) {
   return vnode;
 }
 
-export { renderEndpoint as $, AstroError as A, GetStaticPathsInvalidRouteParam as B, PrerenderDynamicEndpointPathCollide as C, DEFAULT_404_COMPONENT as D, ExpectedImage as E, FailedToFetchRemoteImageDimensions as F, GetStaticPathsRequired as G, ReservedSlotName as H, IncompatibleDescriptorOptions as I, renderSlotToString as J, renderJSX as K, LocalImageUsedWrongly as L, MissingImageDimension as M, NoMatchingStaticPathFound as N, chunkToString as O, PageNumberParamNotFound as P, LocalsNotAnObject as Q, ResponseSentError as R, clientLocalsSymbol as S, clientAddressSymbol as T, UnsupportedImageFormat as U, ClientAddressNotAvailable as V, StaticClientAddressNotAvailable as W, ASTRO_VERSION as X, responseSentSymbol as Y, AstroResponseHeadersReassigned as Z, renderPage as _, UnsupportedImageConversion as a, REROUTABLE_STATUS_CODES as a0, AstroJSX as a1, createVNode as a2, MissingSharp as b, UnknownContentCollectionError as c, createComponent as d, renderScriptElement as e, createHeadAndContent as f, renderTemplate as g, renderComponent as h, createAstro as i, addAttribute as j, renderSlot as k, renderHead as l, maybeRenderHead as m, InvalidImageService as n, ExpectedImageOptions as o, ImageMissingAlt as p, MiddlewareNoDataOrNextCalled as q, renderUniqueStylesheet as r, spreadAttributes as s, MiddlewareNotAResponse as t, unescapeHTML as u, ROUTE_TYPE_HEADER as v, REROUTE_DIRECTIVE_HEADER as w, InvalidGetStaticPathsReturn as x, InvalidGetStaticPathsEntry as y, GetStaticPathsExpectedParams as z };
+export { AstroError as A, chunkToString as B, clientLocalsSymbol as C, DEFAULT_404_COMPONENT as D, ExpectedImageOptions as E, FailedToFetchRemoteImageDimensions as F, GetStaticPathsRequired as G, clientAddressSymbol as H, InvalidImageService as I, ClientAddressNotAvailable as J, ASTRO_VERSION as K, LocalsNotAnObject as L, MiddlewareNoDataOrNextCalled as M, NoMatchingStaticPathFound as N, responseSentSymbol as O, PageNumberParamNotFound as P, AstroResponseHeadersReassigned as Q, ResponseSentError as R, StaticClientAddressNotAvailable as S, renderPage as T, UnknownContentCollectionError as U, renderEndpoint as V, REROUTABLE_STATUS_CODES as W, AstroJSX as X, createVNode as Y, renderScriptElement as a, createHeadAndContent as b, createComponent as c, renderTemplate as d, renderComponent as e, createAstro as f, addAttribute as g, renderSlot as h, renderHead as i, ExpectedImage as j, ImageMissingAlt as k, MiddlewareNotAResponse as l, maybeRenderHead as m, ROUTE_TYPE_HEADER as n, REROUTE_DIRECTIVE_HEADER as o, InvalidGetStaticPathsReturn as p, InvalidGetStaticPathsEntry as q, renderUniqueStylesheet as r, spreadAttributes as s, GetStaticPathsExpectedParams as t, unescapeHTML as u, GetStaticPathsInvalidRouteParam as v, PrerenderDynamicEndpointPathCollide as w, ReservedSlotName as x, renderSlotToString as y, renderJSX as z };

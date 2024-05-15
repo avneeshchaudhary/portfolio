@@ -1,7 +1,7 @@
 /* empty css                                         */
-import { i as createAstro, d as createComponent, g as renderTemplate, m as maybeRenderHead, j as addAttribute, h as renderComponent } from '../astro_BFGcR-ZG.mjs';
+import { f as createAstro, c as createComponent, d as renderTemplate, m as maybeRenderHead, g as addAttribute, e as renderComponent } from '../astro_BFTLNmQ5.mjs';
 import 'kleur/colors';
-import { g as getCollection, $ as $$Container, B as BLOG, a as $$PageLayout, P as PROJECTS, d as dateRange, W as WORK, S as SITE, b as $$Link, c as SOCIALS, H as HOME } from './__BDi_IUNR.mjs';
+import { g as getCollection, $ as $$Container, B as BLOG, a as $$PageLayout, P as PROJECTS, d as dateRange, W as WORK, S as SITE, b as $$Link, c as SOCIALS, H as HOME } from './__BzlA2ykd.mjs';
 import { DocumentRenderer } from '@keystatic/core/renderer';
 import 'clsx';
 import { createReader } from '@keystatic/core/reader';

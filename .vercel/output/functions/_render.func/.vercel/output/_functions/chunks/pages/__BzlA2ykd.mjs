@@ -1,7 +1,7 @@
 /* empty css                                         */
-import { A as AstroError, c as UnknownContentCollectionError, d as createComponent, r as renderUniqueStylesheet, e as renderScriptElement, f as createHeadAndContent, g as renderTemplate, h as renderComponent, u as unescapeHTML, i as createAstro, j as addAttribute, m as maybeRenderHead, k as renderSlot, s as spreadAttributes, l as renderHead } from '../astro_BFGcR-ZG.mjs';
+import { A as AstroError, U as UnknownContentCollectionError, c as createComponent, r as renderUniqueStylesheet, a as renderScriptElement, b as createHeadAndContent, d as renderTemplate, e as renderComponent, u as unescapeHTML, f as createAstro, g as addAttribute, m as maybeRenderHead, h as renderSlot, s as spreadAttributes, i as renderHead } from '../astro_BFTLNmQ5.mjs';
 import 'kleur/colors';
-import { p as prependForwardSlash } from '../astro/assets-service_BtNAcRPf.mjs';
+import { p as prependForwardSlash } from '../astro/assets-service_CkDDNIHh.mjs';
 /* empty css                           */
 import { clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
@@ -196,7 +196,7 @@ function createGlobLookup(glob) {
 	};
 }
 
-const renderEntryGlob = /* #__PURE__ */ Object.assign({"/src/content/blog/01-Drone-Build/index.md": () => import('../index_gERDG9OT.mjs'),"/src/content/projects/project-1/index.md": () => import('../index_BSdyhVBv.mjs'),"/src/content/work/PSPC.md": () => import('../PSPC_CO4FmSq5.mjs'),"/src/content/work/TBS.md": () => import('../TBS_BVHBVUrm.mjs'),"/src/content/work/TC.md": () => import('../TC_CTzAnRqA.mjs')});
+const renderEntryGlob = /* #__PURE__ */ Object.assign({"/src/content/blog/01-Drone-Build/index.md": () => import('../index_mRuYtCVO.mjs'),"/src/content/projects/project-1/index.md": () => import('../index_BXZBV178.mjs'),"/src/content/work/PSPC.md": () => import('../PSPC_N8t76qHl.mjs'),"/src/content/work/TBS.md": () => import('../TBS_zUVPRxIg.mjs'),"/src/content/work/TC.md": () => import('../TC_CmY58fB2.mjs')});
 const collectionToRenderEntryMap = createCollectionToGlobResultMap({
 	globResult: renderEntryGlob,
 	contentDir,

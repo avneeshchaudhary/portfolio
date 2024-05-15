@@ -1,5 +1,5 @@
 /* empty css                                         */
-import { i as createAstro, d as createComponent, g as renderTemplate, h as renderComponent } from '../astro_BFGcR-ZG.mjs';
+import { f as createAstro, c as createComponent, d as renderTemplate, e as renderComponent } from '../astro_BFTLNmQ5.mjs';
 import 'kleur/colors';
 
 const $$Astro = createAstro("https://avneeshchaudhary.com");

@@ -1,5 +1,5 @@
 async function getMod() {
-						return import('./index_rTVIdVna.mjs');
+						return import('./index_ItvUGA4A.mjs');
 					}
 					const collectedLinks = [];
 					const collectedStyles = [];

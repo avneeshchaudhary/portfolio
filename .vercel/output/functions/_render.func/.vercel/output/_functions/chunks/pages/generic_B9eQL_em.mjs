@@ -1,6 +1,6 @@
-import { r as resolveSrc, i as isRemoteImage, a as isESMImportedImage, b as isLocalService, D as DEFAULT_HASH_PROPS, c as isRemotePath, d as isRemoteAllowed } from '../astro/assets-service_BtNAcRPf.mjs';
+import { r as resolveSrc, i as isRemoteImage, a as isESMImportedImage, b as isLocalService, D as DEFAULT_HASH_PROPS, c as isRemotePath, d as isRemoteAllowed } from '../astro/assets-service_CkDDNIHh.mjs';
 import mime from 'mime/lite.js';
-import { A as AstroError, n as InvalidImageService, o as ExpectedImageOptions, E as ExpectedImage, F as FailedToFetchRemoteImageDimensions, i as createAstro, d as createComponent, p as ImageMissingAlt, g as renderTemplate, m as maybeRenderHead, j as addAttribute, s as spreadAttributes } from '../astro_BFGcR-ZG.mjs';
+import { A as AstroError, I as InvalidImageService, E as ExpectedImageOptions, j as ExpectedImage, F as FailedToFetchRemoteImageDimensions, f as createAstro, c as createComponent, k as ImageMissingAlt, d as renderTemplate, m as maybeRenderHead, g as addAttribute, s as spreadAttributes } from '../astro_BFTLNmQ5.mjs';
 import 'clsx';
 
 const decoder = new TextDecoder();
@@ -819,8 +819,8 @@ async function getConfiguredImageService() {
   if (!globalThis?.astroAsset?.imageService) {
     const { default: service } = await import(
       // @ts-expect-error
-      '../astro/assets-service_BtNAcRPf.mjs'
-    ).then(n => n.k).catch((e) => {
+      '../build-service_BEAsqaJd.mjs'
+    ).catch((e) => {
       const error = new AstroError(InvalidImageService);
       error.cause = e;
       throw error;
@@ -1004,7 +1004,7 @@ const $$Picture = createComponent(async ($$result, $$props, $$slots) => {
   })} <img${addAttribute(fallbackImage.src, "src")}${spreadAttributes(imgAdditionalAttributes)}${spreadAttributes(fallbackImage.attributes)}> </picture>`;
 }, "/Users/avneeshchaudhary/Documents/Projects/astro/demo/portfolio/node_modules/astro/components/Picture.astro", void 0);
 
-const imageConfig = {"service":{"entrypoint":"astro/assets/services/sharp","config":{}},"domains":[],"remotePatterns":[]};
+const imageConfig = {"service":{"entrypoint":"@astrojs/vercel/build-image-service","config":{"sizes":[640,750,828,1080,1200,1920,2048,3840],"domains":[],"remotePatterns":[]}},"domains":[],"remotePatterns":[]};
 					const getImage = async (options) => await getImage$1(options, imageConfig);
 
 async function loadRemoteImage(src) {

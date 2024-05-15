@@ -12,6 +12,8 @@ export default defineConfig({
   integrations: [mdx(), react(), sitemap(), tailwind()].concat(process.env.DISABLE_KEYSTATIC ? [] : keystatic()),
   output: "server",
   adapter: vercel({
-    webAnalytics: { enabled: true }
+    webAnalytics: { enabled: true },
+    imageService: true,
+    
   })
 });

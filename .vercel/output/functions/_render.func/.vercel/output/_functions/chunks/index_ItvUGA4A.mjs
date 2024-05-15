@@ -1,5 +1,5 @@
-import { d as createComponent, g as renderTemplate, m as maybeRenderHead, u as unescapeHTML, s as spreadAttributes } from './astro_BFGcR-ZG.mjs';
-import { g as getImage } from './pages/generic_CIcGhCkt.mjs';
+import { c as createComponent, d as renderTemplate, m as maybeRenderHead, u as unescapeHTML, s as spreadAttributes } from './astro_BFTLNmQ5.mjs';
+import { g as getImage } from './pages/generic_B9eQL_em.mjs';
 import 'clsx';
 
 const Astro__ZvtNw8 = new Proxy({"src":"/_astro/pixhawk.BehZV_pm.jpg","width":1468,"height":1252,"format":"webp"}, {

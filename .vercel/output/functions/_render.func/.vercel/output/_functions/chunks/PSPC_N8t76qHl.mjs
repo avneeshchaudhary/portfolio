@@ -1,5 +1,5 @@
 async function getMod() {
-						return import('./PSPC_I77oGEcP.mjs');
+						return import('./PSPC_Bhboglz3.mjs');
 					}
 					const collectedLinks = [];
 					const collectedStyles = [];

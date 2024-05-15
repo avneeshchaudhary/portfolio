@@ -1,6 +1,6 @@
 import { makeGenericAPIRouteHandler } from '@keystatic/core/api/generic';
 import { parseString } from 'set-cookie-parser';
-import { c as config } from './index_D4A0ywHc.mjs';
+import { c as config } from './index_C3h9BWmM.mjs';
 
 function makeHandler(_config) {
   var _config$clientId, _config$clientSecret, _config$secret;
