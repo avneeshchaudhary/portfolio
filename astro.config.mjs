@@ -10,6 +10,8 @@ import vercel from "@astrojs/vercel/serverless";
 export default defineConfig({
   site: "https://avneeshchaudhary.com",
   integrations: [mdx(), react(), sitemap(), tailwind()].concat(process.env.DISABLE_KEYSTATIC ? [] : keystatic()),
-  output: "hybrid",
-  adapter: vercel()
+  output: "server",
+  adapter: vercel({
+    webAnalytics: { enabled: true }
+  })
 });

@@ -22,6 +22,38 @@
 		{
 			"src": "^\\/keystatic(?:\\/(.*?))?\\/?$",
 			"dest": "_render"
+		},
+		{
+			"src": "^\\/blog\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/blog(?:\\/(.*?))?\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/projects\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/projects(?:\\/(.*?))?\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/robots\\.txt\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/rss\\.xml\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/work\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/$",
+			"dest": "_render"
 		}
 	]
 }
