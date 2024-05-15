@@ -6,13 +6,13 @@ date: "Apr 22 2024"
 ---
 Have you ever wondered about building a drone that could potentially save lives? I've been fortunate to be part of an incredible project aimed at developing a semi-autonomous drone to assist emergency responders. This blog post will explore the technical challenges and innovations involved in building an emergency response drone.
 
-![image](Quadcoptor.webp)
+![Quadcoptor Assembly](Quadcoptor.webp)
 
 ## Conceptualization
 
 The project began with a clear objective: to create a drone that enhances the efficiency of emergency services. My role as a Technical Member involved choosing and integrating the drone's core hardware components.
 
-![image](pixhawk.jpg)
+![Pixhawk Ciruit Diagram](pixhawk.jpg)
 
 Here’s a table of the key components we utilized:
 
@@ -56,7 +56,7 @@ Challenges Encountered:
 
 Collaborating with a diverse team of experts was a key highlight of this project. Everyone’s unique skills contributed significantly, making the drone more than just a machine.
 
-![image](Teamwork.webp)
+![Team Pizza)](Teamwork.webp)
 
 >**Secret to Success:** Effective communication and occasional team meals were essential for team morale.
 
@@ -64,7 +64,7 @@ Collaborating with a diverse team of experts was a key highlight of this project
 
 Despite legal constraints, our first 10-second test flight was a breakthrough, demonstrating our adherence to safety protocols and our commitment to the project.
 
-
+![Test Flight Success](testflight.jpg)
 
 We are excited about future possibilities and enhancements for our drone project.
 
