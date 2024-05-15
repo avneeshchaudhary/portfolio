@@ -6,7 +6,7 @@ date: "Apr 22 2024"
 ---
 Have you ever wondered about building a drone that could potentially save lives? I've been fortunate to be part of an incredible project aimed at developing a semi-autonomous drone to assist emergency responders. This blog post will explore the technical challenges and innovations involved in building an emergency response drone.
 
-![image](/Quadcoptor.webp)
+![image](Quadcoptor.webp)
 
 ## Conceptualization
 
