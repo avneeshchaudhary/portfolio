@@ -1,6 +1,6 @@
 import React, { createElement } from 'react';
 import ReactDOM from 'react-dom/server';
-import { X as AstroJSX, A as AstroError, z as renderJSX, Y as createVNode } from './chunks/astro_BFTLNmQ5.mjs';
+import { a1 as AstroJSX, A as AstroError, K as renderJSX, a2 as createVNode } from './chunks/astro_BEmqTF0a.mjs';
 
 const contexts = new WeakMap();
 
